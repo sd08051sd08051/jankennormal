@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけん</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>ジャンケンでお手伝いを決めよう</h1>
+
+      <form id="form" class="mb-20">
+        <input
+          id="input"
+          class="form-control mb-10"
+          type="text"
+          placeholder="家事を入力"
+          autocomplete="off"
+        />
+        <button class="task_submit" type="button">Add Task</button>
+      </form>
+
+      
+
+
+      <div class="board">
+        <div class="panel player">
+          <h2>めい・こゆき</h2>
+          <div class="handWrapper">
+            <button id="rock" class="hand rock" onClick="onHandClick(this)">
+              rock
+            </button>
+            <button id="paper" class="hand paper" onClick="onHandClick(this)">
+              paper
+            </button>
+            <button
+              id="scissors"
+              class="hand scissors"
+              onClick="onHandClick(this)"
+            >
+              scissors
+            </button>
+          </div>
+        </div>
+
+        <div class="panel computer">
+          <h2>はる・ことみ</h2>
+          <div id="computerHand" class="handWrapper">?</div>
+        </div>
+      </div>
+      <div id="task" class="task">お手伝い内容：</div>
+      <div id="outcome" class="outcome">誰がお手伝いかな？</div>
+    </div>
+
+    <body class="bg-light">
+    <div class="container w-75">
+      
+      <!-- <form id="form" class="mb-20">
+        <input
+          id="input"
+          class="form-control mb-10"
+          type="text"
+          placeholder="家事を入力"
+          autocomplete="off"
+        />
+        <button class="task_submit" type="button">Add Task</button>
+      </form> -->
+
+        
+        <!-- <ul class="list-group kotomi" id="ul"></ul> -->
+      </div>
+    </div>
+
+
+  </body>
+</html>
